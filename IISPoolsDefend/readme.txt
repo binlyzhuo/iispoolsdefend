@@ -1,5 +1,6 @@
 运行环境：
 .net4.5
+服务器需要安装Web管理工具（Internet Information Services模块下面）
 
 功能说明：
 监控服务器IIS应用程序池，发现有应用程序池停止了，自动启动程序。
