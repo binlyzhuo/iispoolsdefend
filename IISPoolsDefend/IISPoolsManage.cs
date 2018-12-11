@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Timers;
 
 namespace IISPoolsDefend
@@ -9,7 +10,8 @@ namespace IISPoolsDefend
 
         public IISPoolsManage()
         {
-            _timer = new Timer(1000) { AutoReset = true };
+            int timeConfig =int.Parse(ConfigurationManager.AppSettings["time"]) ;
+            _timer = new Timer(timeConfig*1000) { AutoReset = true };
             _timer.Elapsed += new ElapsedEventHandler(OnTick);
             _timer.Elapsed += (sender, eventArgs) => Console.WriteLine("It is {0} and all is well", DateTime.Now);
         }
