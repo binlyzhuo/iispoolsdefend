@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IISPoolsDefend", "IISPoolsDefend\IISPoolsDefend.csproj", "{D16AF63E-5AB4-4D79-87F5-F4231FCD9FBD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bat", "bat", "{BCD8660F-22E6-42AB-B1A3-D3F0B88035C0}"
+	ProjectSection(SolutionItems) = preProject
+		install.bat = install.bat
+		uninstall.bat = uninstall.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
